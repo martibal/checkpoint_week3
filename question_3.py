@@ -16,3 +16,22 @@ if (sales_team_dict['Jordan_belfort']['sales'])>20:
 
 score = score_calls + score_meetings + score_sales
 print(sales_team_dict.items())
+
+
+
+sales_team_dict[name] = {'calls': a, 'meetings': b, 'sales': c, 'score' : score}
+
+
+score_calls = (sales_team_dict[name]['calls'])*10
+if (sales_team_dict[name]['calls'])>150:
+    score_calls = score_calls + 100
+
+score_meetings = (sales_team_dict[name]['meetings'])*30
+if (sales_team_dict[name]['meetings'])>20:
+    score_meetings = score_meetings + 100
+
+score_sales = (sales_team_dict[name]['sales'])*100
+if (sales_team_dict[name]['sales'])>20:
+    score_sales = score_sales + 100
+
+score = score_calls + score_meetings + score_sales
